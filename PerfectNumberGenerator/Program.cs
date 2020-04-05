@@ -1,37 +1,27 @@
-﻿// ---------------------------------------------------------------------------------------
-// Perfect Number Generator
+﻿// Perfect Number Generator
 // Michael Hollas, 2020/4/2
 // ---------------------------------------------------------------------------------------
 
-// ---------------------------------------------------------------------------------------
-// IMPORTS
-// ---------------------------------------------------------------------------------------
 using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace PerfectNumberGenerator
 {
-        // ---------------------------------------------------------------------------------------
-{   // CLASSES
-    // ---------------------------------------------------------------------------------------
-
-
-    // ---------------------------------------------------------------------------------------
-    // MAIN
-    // ---------------------------------------------------------------------------------------
+    /// <summary>
+    /// Contains the main fuction:
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            var gen = new GeneratePerfectNumbers(8);
-            gen.Show();
-            Console.WriteLine(String.Join(", ", gen.Validate()));
-
-             
-
+            var gen = new GeneratePerfectNumbers();
+            List<BigInteger> perfectNumbers = gen.Generate(20);
+            GeneratePerfectNumbers.Show(perfectNumbers);
+            //Console.WriteLine(String.Join(", ", GeneratePerfectNumbers.Validate(perfectNumbers)));
         }
     }
 }
