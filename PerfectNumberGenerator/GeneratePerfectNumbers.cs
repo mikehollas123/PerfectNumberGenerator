@@ -16,7 +16,7 @@ namespace PerfectNumberGenerator
     ///.Validate() method will calculate the sum of the factors for each of these numbers, and if the sum is the same as the number, it will yield a bool value true.
     ///this is done for all found perfect numbers , and is output as a list of bools.
     /// </summary>
-    public class GeneratePerfectNumbers
+    public class PerfectNumbers
     {
         /// <summary>
         /// Starts the Generator - using the MersonnePrimes Method 

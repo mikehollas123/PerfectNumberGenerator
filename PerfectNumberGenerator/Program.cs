@@ -18,9 +18,9 @@ namespace PerfectNumberGenerator
     {
         static void Main(string[] args)
         {
-            var gen = new GeneratePerfectNumbers();
+            var gen = new PerfectNumbers();
             List<BigInteger> perfectNumbers = gen.Generate(20);
-            GeneratePerfectNumbers.Show(perfectNumbers);
+            PerfectNumbers.Show(perfectNumbers);
             //Console.WriteLine(String.Join(", ", GeneratePerfectNumbers.Validate(perfectNumbers)));
         }
     }
